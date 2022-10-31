@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_action_home"/>
+    <item
+        android:id="@+id/like"
+        android:title="Liked"
+        android:icon="@drawable/ic_action_like"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Me"
+        android:icon="@drawable/ic_action_name"/>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67578116768",
+    "project_id": "afrofinds-93455",
+    "storage_bucket": "afrofinds-93455.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67578116768:android:7c058aa2cf5538280fe7c5",
+        "android_client_info": {
+          "package_name": "com.example.afrofinds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67578116768-12g2ii9omrd1cro9uhm720stsnpkh230.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4O1kcwDYrEncnI9JBbefh50l219ptRd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67578116768-12g2ii9omrd1cro9uhm720stsnpkh230.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

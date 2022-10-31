@@ -1,0 +1,5 @@
+dependencyResolutionManagement {
+
+}
+rootProject.name = "AfroFinds"
+include ':app'

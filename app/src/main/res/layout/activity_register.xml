@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="126dp"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bernard_wacker"
+        android:textColor="#7d4810"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:drawableEnd="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/contact"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint=" Email"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_phone"
+        android:ems="10"
+        android:hint=" Phone Number"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/contact"
+        android:layout_alignStart="@+id/contact"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner"
+        android:textAlignment="center"
+        android:text="REGISTER"
+        android:textSize="18dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signBtn"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Already have an Account? Login"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+</RelativeLayout>

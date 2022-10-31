@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginActivity">
+
+    <!--android:fontFamily="@font/dancing_script"-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="126dp"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bernard_wacker"
+        android:textColor="#7d4810"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="40dp" />
+        <!--android:fontFamily="@font/dancing_script"-->
+
+
+    <EditText
+        android:id="@+id/loginName"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:drawableEnd="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+      <!--  android:background="@drawable/gradient"-->
+
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/loginName"
+        android:layout_alignStart="@+id/loginName"
+        android:layout_alignLeft="@+id/loginName"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/recover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Forgot Password?"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="18dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Create an Account"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+</RelativeLayout>
+
+

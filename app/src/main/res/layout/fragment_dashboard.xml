@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_view_home"
+            app:iconifiedByDefault="false"
+            app:queryHint="Find Something"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Looking for something?"
+        android:textColor="#7d0e31"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/south"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/restaurant" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/south"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bernard_wacker"
+                        android:text="RESTAURANTS"
+                        android:textColor="#7d0e31"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/more1"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/name1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/west"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hair" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/west"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bernard_wacker"
+                        android:text="Salon"
+                        android:textColor="#7d0e31"
+                        android:textSize="20sp" />
+
+
+                    <Button
+                        android:id="@+id/more2"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/name2"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/morocco"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/store" />
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/morocco"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bernard_wacker"
+                        android:text="Store"
+                        android:textColor="#7d0e31"
+                        android:textSize="25sp"/>
+
+                    <Button
+                        android:id="@+id/more3"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/name3"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/community"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/community"/>
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/community"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bernard_wacker"
+                        android:text="Community"
+                        android:textColor="#7d0e31"
+                        android:textSize="25sp"/>
+
+                    <Button
+                        android:id="@+id/more4"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/name4"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="You might like these"
+        android:textColor="#7d0e31"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/souths"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/store" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/souths"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/west1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/store" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/west1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp">
+
+                    <ImageView
+                        android:id="@+id/morocc"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/restaurant" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/morocc"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="VIEW MORE"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
