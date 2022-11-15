@@ -34,17 +34,6 @@ public class RestaurantActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-
-
-
-
-
-
-
-
-
-
-
     }
 
 

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/instructions_step_title"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:text="Details"
+                android:textColor="#7d0e31"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:scaleType="center"/>
+
+                <Button
+                    android:id="@+id/likeBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autoLink="all"
+                    android:textColor="#7d0e31"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_like"
+                    android:padding="15dp" />
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/itemWeb"
+                    android:text="Webpage"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    android:textStyle="normal"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textSize="20sp"
+                    android:text="Featured Hairstyles"
+                    android:textColor="#7d0e31"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="200dp"
+                                android:layout_height="200dp">
+
+                                <ImageView
+                                    android:id="@+id/style1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="centerCrop" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="200dp"
+                                android:layout_height="200dp">
+
+                                <ImageView
+                                    android:id="@+id/style2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="centerCrop" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_corner"
+                android:textSize="18dp"
+                android:text="CALL"
+                android:textAlignment="center" />
+            <TextView
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:text="Location"
+                android:textColor="#7d0e31"
+                android:layout_width="match_parent"
+                android:id="@+id/location"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:text="FIND ON MAP"
+                android:textColor="#7d0e31"
+                android:layout_width="match_parent"
+                android:id="@+id/findMap"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

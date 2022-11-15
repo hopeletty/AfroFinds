@@ -1,7 +1,6 @@
 package com.example.afrofinds;
 
-import static java.security.AccessController.getContext;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -21,11 +20,11 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.afrofinds.Models.Salon;
 import com.example.afrofinds.Models.Service;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,32 +34,29 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class RestaurantList extends AppCompatActivity {
+public class SalonList extends AppCompatActivity {
     RecyclerView recyclerView;
-    RestaurantAdapter restaurantAdapter;
-    ArrayList<Service> list;
+    SalonAdapter salonAdapter;
+    ArrayList<Salon> salonList;
     SearchView searchView;
-    FloatingActionButton backBtn;
 
     private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurantlist);
+        setContentView(R.layout.activity_salonlist);
 
         String url = "https://afrofinds-93455-default-rtdb.asia-southeast1.firebasedatabase.app";
-        databaseReference = FirebaseDatabase.getInstance(url).getReference("Restaurants");
+        databaseReference = FirebaseDatabase.getInstance(url).getReference("Salons");
 
-        recyclerView = findViewById(R.id.restaurantlist);
+        recyclerView = findViewById(R.id.salonlist);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        list = new ArrayList<>();
-        restaurantAdapter = new RestaurantAdapter(this, list);
-        recyclerView.setAdapter(restaurantAdapter);
-
-        backBtn = findViewById(R.id.backBtn);
+        salonList = new ArrayList<>();
+        salonAdapter = new SalonAdapter(this, salonList);
+        recyclerView.setAdapter(salonAdapter);
 
 
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -69,11 +65,10 @@ public class RestaurantList extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    Service service = dataSnapshot.getValue(Service.class);
-                    list.add(service);
-               //     String key = databaseReference.push().getKey();
+                    Salon salon = dataSnapshot.getValue(Salon.class);
+                    salonList.add(salon);
                 }
-                restaurantAdapter.notifyDataSetChanged();
+                salonAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -101,44 +96,37 @@ public class RestaurantList extends AppCompatActivity {
                 return false;
             }
         });
-     /*   backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RestaurantList.this, DashboardFragment.class));
-            }
-        });*/
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private void searchItem(final String s) {
-       // final FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        ArrayList<Service> searchList = new ArrayList<>();
-        for (int i=0; i<list.size(); i++) {
+        // final FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        ArrayList<Salon> searchList = new ArrayList<>();
+        for (int i=0; i<salonList.size(); i++) {
 
-            Service service = list.get(i);
-            if (service.getName().toLowerCase().contains(s.toLowerCase()) ||
-                    service.getCuisine().toLowerCase().contains(s.toLowerCase())) {
-                searchList.add(service);
+            Salon salon = salonList.get(i);
+            if (salon.getName().toLowerCase().contains(s.toLowerCase())) {
+                searchList.add(salon);
             }
         }
 
-        restaurantAdapter = new RestaurantAdapter(getApplicationContext(), searchList);
-        restaurantAdapter.notifyDataSetChanged();
-        recyclerView.setAdapter(restaurantAdapter);
+        salonAdapter = new SalonAdapter(getApplicationContext(), searchList);
+        salonAdapter.notifyDataSetChanged();
+        recyclerView.setAdapter(salonAdapter);
     }
 
-    class ServiceViewHolder extends RecyclerView.ViewHolder {
-        TextView name, description, cuisine;
-        ImageView service_image;
+    class SalonViewHolder extends RecyclerView.ViewHolder {
+        TextView name, itemWeb;
+        ImageView salon_image;
 
-        public ServiceViewHolder(@NonNull View itemView) {
+        public SalonViewHolder(@NonNull View itemView) {
             super(itemView);
         }
-        public void setDetails(String itemName,String itemDescription, String userImage){
+        public void setDetails(String itemName, String userImage){
             name = itemView.findViewById(R.id.name);
-            description = itemView.findViewById(R.id.description);
-            cuisine = itemView.findViewById(R.id.cuisine);
-            service_image = itemView.findViewById(R.id.service_image);
-          //  backBtn = itemView.findViewById(R.id.backBtn);
+            itemWeb = itemView.findViewById(R.id.itemWeb);
+
+            salon_image = itemView.findViewById(R.id.salon_image);
 
         }
 

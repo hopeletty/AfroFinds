@@ -32,10 +32,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_home"
+                    android:drawableStart="@drawable/ic_action_name"
                     android:drawableTint="#7d0e31"
                     android:layout_margin="5dp"
-                    android:text=" Address"
+                    android:text=" Username"
                     android:padding="2dp"
                     android:textColor="#7d0e31"
                     android:textSize="16sp"
@@ -54,22 +54,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="My Address"
+                    android:text="My Name"
+                    android:id="@+id/userName"
                     android:textSize="17sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
-                <TextView
-                    android:text="Address1, \nMAddress2,\nAddress3 \nAddress4"
-                    android:textSize="13sp"
-                    android:textColor="#ED5E5E5E"
-                    android:textStyle="normal"
-                    android:textAlignment="textStart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    card_view:ignore="RtlCompat" />
 
             </LinearLayout>
         </LinearLayout>

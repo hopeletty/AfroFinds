@@ -38,9 +38,10 @@
 
         </LinearLayout>
         <TextView
-            android:text="01022223333"
+            android:text="01000000"
             android:textStyle="bold"
             android:textColor="@color/black"
+            android:id="@+id/phoneNumber"
             android:textSize="18sp"
             android:layout_marginStart="25dp"
             android:layout_marginBottom="15dp"

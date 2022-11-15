@@ -20,6 +20,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:layout_width="0dp"
+            android:textSize="20sp"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
@@ -50,7 +51,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/item_add" />
+            <include layout="@layout/item_name" />
 
             <include layout="@layout/item_info" />
 
@@ -60,12 +61,19 @@
                 android:id="@+id/logout"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:background="@drawable/rounded_corner"
                 android:text="LOGOUT"
-                android:textAlignment="center"
                 android:textSize="18dp" />
+
+         <!--   <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/editBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_edit" />-->
 
         </LinearLayout>
 

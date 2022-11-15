@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_action_home"/>
     <item
         android:id="@+id/like"
-        android:title="Liked"
+        android:title="Wishlist"
         android:icon="@drawable/ic_action_like"/>
     <item
         android:id="@+id/profile"

@@ -16,10 +16,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DashboardFragment extends Fragment {
     public Button more1;
-    SearchView searchView;
     ArrayList<Service> list;
 
     @Override
@@ -32,35 +32,22 @@ public class DashboardFragment extends Fragment {
         String url = "https://afrofinds-93455-default-rtdb.asia-southeast1.firebasedatabase.app/";
         DatabaseReference databaseReference = FirebaseDatabase.getInstance(url).getReference("Restaurants");
 
-        searchView = (SearchView) view.findViewById(R.id.search_view_home);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                firebaseUserSearch();
-
-
-               // dialog.show();
-                return true;
-            }
-
-            private void firebaseUserSearch() {
-
-
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
-            }
-        });
-
-
 
         Button more1 = (Button) view.findViewById(R.id.more1);
         more1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), RestaurantList.class);
+                startActivity(intent);
+                getActivity().finish();
+
+            }
+        });
+        Button more2 = (Button) view.findViewById(R.id.more2);
+        more2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), SalonList.class);
                 startActivity(intent);
                 getActivity().finish();
 

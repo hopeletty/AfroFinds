@@ -20,6 +20,8 @@
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_restaurant.xml" value="0.24728260869565216" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_restaurantlist.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_salon.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_salon_item.xml" value="0.2341485507246377" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_salonlist.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_store.xml" value="0.24728260869565216" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/actvity_login.xml" value="0.264" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/dashboard.xml" value="0.18614130434782608" />
@@ -37,6 +39,7 @@
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/main_page.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/profile.xml" value="0.176" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/rounded_corner.xml" value="0.21829710144927536" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/salon_items_layout.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/service.xml" value="0.21829710144927536" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/service_home.xml" value="0.19519927536231885" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/service_items_layout.xml" value="0.25" />

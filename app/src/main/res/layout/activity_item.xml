@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
     android:layout_margin="4dp"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,6 +36,50 @@
                     android:layout_width="400dp"
                     android:layout_height="200dp"
                     android:scaleType="center"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/likeBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:textColor="#7d0e31"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/white"
+                        android:drawableStart="@drawable/ic_like"
+                        android:padding="15dp" />
+
+                    <TextView
+                        android:id="@+id/wishlist"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="4dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="VIEW WISH LIST"
+                        android:textColor="#7d0e31"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/backBtn"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/ic_back" />
+
+                </RelativeLayout>
+
                 <TextView
                     android:id="@+id/itemName"
                     android:text="Name"
@@ -45,6 +90,7 @@
                     android:singleLine="true"
                     android:marqueeRepeatLimit="marquee_forever"
                     android:ellipsize="marquee"
+                    android:layout_marginTop="10dp"
                     android:scrollHorizontally="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -95,6 +141,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/layout"
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
@@ -109,12 +156,56 @@
                                 android:layout_height="200dp">
 
                                 <ImageView
-                                    android:id="@+id/south"
+                                    android:id="@+id/menu1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_marginTop="5dp"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu1" />
+                                    android:scaleType="centerCrop" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="200dp"
+                                android:layout_height="200dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/menu2"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="centerCrop" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="200dp"
+                                android:layout_height="200dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/menu3"
+                                    android:scaleType="centerCrop" />
+
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
@@ -134,52 +225,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_marginTop="5dp"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu2" />
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_margin="10dp"
-                            app:cardCornerRadius="20dp">
-
-                            <RelativeLayout
-                                android:layout_width="200dp"
-                                android:layout_height="200dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginTop="5dp"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu3" />
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_margin="10dp"
-                            app:cardCornerRadius="20dp">
-
-                            <RelativeLayout
-                                android:layout_width="200dp"
-                                android:layout_height="200dp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginTop="5dp"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu4" />
+                                    android:id="@+id/menu4"
+                                    android:scaleType="centerCrop" />
 
                             </RelativeLayout>
 
@@ -187,37 +234,37 @@
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
-            <Button
-                android:id="@+id/callButton"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/rounded_corner"
-                android:textSize="18dp"
-                android:text="CALL"
-                android:textAlignment="center" />
-            <TextView
-                android:textStyle="bold"
-                android:padding="8dp"
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"
-                android:text="Location"
-                android:textColor="#7d0e31"
-                android:layout_width="match_parent"
-                android:id="@+id/location"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:textStyle="bold"
-                android:padding="8dp"
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"
-                android:text="FIND ON MAP"
-                android:textColor="#7d0e31"
-                android:layout_width="match_parent"
-                android:id="@+id/findMap"
-                android:textAlignment="center"
-                android:layout_height="wrap_content"/>
+                android:layout_below="@+id/layout"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/callButton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rounded_corner"
+                    android:text="CALL"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/callButton"
+                    android:text="FIND ON MAP"
+                    android:textColor="#7d0e31"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:id="@+id/findMap"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
         </LinearLayout>
+
     </ScrollView>
 </androidx.cardview.widget.CardView>

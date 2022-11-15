@@ -40,6 +40,7 @@
             android:text="test1@test.com"
             android:textStyle="bold"
             android:textColor="@color/black"
+            android:id="@+id/userEmail"
             android:textSize="18sp"
             android:layout_marginStart="25dp"
             android:layout_marginBottom="15dp"

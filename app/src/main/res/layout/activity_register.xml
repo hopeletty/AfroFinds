@@ -43,14 +43,26 @@
         android:textSize="20dp" />
 
     <EditText
-        android:id="@+id/mail"
+        android:id="@+id/contact"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_below="@+id/name"
-        android:layout_alignStart="@+id/contact"
-        android:layout_alignLeft="@+id/contact"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_phone"
+        android:ems="10"
+        android:hint=" Phone Number"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/contact"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:drawableEnd="@drawable/ic_action_email"
         android:ems="10"
@@ -59,31 +71,31 @@
 
 
     <EditText
-        android:id="@+id/contact"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/mail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:drawableEnd="@drawable/ic_action_phone"
-        android:ems="10"
-        android:hint=" Phone Number"
-        android:inputType="textPersonName"
-        android:textSize="20dp" />
-
-    <EditText
         android:id="@+id/pass"
         android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/contact"
-        android:layout_alignStart="@+id/contact"
-        android:layout_alignLeft="@+id/contact"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:drawableEnd="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/confirmPass"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/pass"
+        android:layout_alignStart="@+id/pass"
+        android:layout_alignLeft="@+id/pass"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="50dp"
         android:drawableEnd="@drawable/ic_action_pass"
         android:ems="10"
-        android:hint=" Password"
+        android:hint=" Confirm Password"
         android:inputType="textPassword"
         android:textSize="20dp" />
 
@@ -92,7 +104,7 @@
         android:id="@+id/signBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/pass"
+        android:layout_below="@+id/confirmPass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:background="@drawable/rounded_corner"

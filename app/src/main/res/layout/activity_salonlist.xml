@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RestaurantList">
+    tools:context=".SalonList">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/search"
@@ -28,11 +28,9 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/restaurantlist"
+        android:id="@+id/salonlist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="4dp"/>
-
-
 
 </LinearLayout>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.afrofinds">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -21,6 +24,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-3940256099942544~3347511713"/>
+
         <activity
             android:name=".LoginActivity"/>
         <activity
@@ -41,9 +49,22 @@
         <activity
             android:name=".RestaurantList"/>
         <activity
-            android:name=".ItemActivity"/>
+            android:name=".LikedList" />
+        <activity
+            android:name=".ItemActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MapsActivity"/>
+        <activity
+            android:name=".SalonList"/>
+        <activity
+            android:name=".SalonActivity"/>
+
 
     </application>
 
