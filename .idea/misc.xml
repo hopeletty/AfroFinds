@@ -10,7 +10,9 @@
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/drawable/ic_action_pass.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/drawable/selector.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/actiity_community.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_community.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_communitylist.xml" value="0.12760416666666666" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_item.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_login.xml" value="0.2269021739130435" />
@@ -24,6 +26,8 @@
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_salonlist.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/activity_store.xml" value="0.24728260869565216" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/actvity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/community_details.xml" value="0.25" />
+        <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/community_layout.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/dashboard.xml" value="0.18614130434782608" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Hope/AndroidStudioProjects/AfroFinds/app/src/main/res/layout/fragment_like.xml" value="0.25" />

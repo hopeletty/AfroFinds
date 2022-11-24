@@ -128,6 +128,8 @@ public class LoginActivity extends AppCompatActivity {
 
         else if("profileFragment".equals(src ))
             intent = new Intent(LoginActivity.this, ProfileFragment.class);
+        else if("communityActivity".equals(src ))
+            intent = new Intent(LoginActivity.this, CommunityActivity.class);
 
         return intent;
 

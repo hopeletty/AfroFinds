@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DashboardFragment extends Fragment {
-    public Button more1;
+    public Button more1, more2, more3, more4;
     ArrayList<Service> list;
 
     @Override
@@ -53,9 +53,17 @@ public class DashboardFragment extends Fragment {
 
             }
         });
+        Button more4 = (Button) view.findViewById(R.id.more4);
+        more4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), CommunityList.class);
+                startActivity(intent);
+               // getActivity().finish();
+
+            }
+        });
         return view;
-
-
 
     }
 }

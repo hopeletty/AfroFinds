@@ -48,8 +48,8 @@
             android:name=".RestaurantActivity"/>
         <activity
             android:name=".RestaurantList"/>
-        <activity
-            android:name=".LikedList" />
+       <activity android:name=".CommunityList"/>
+        <activity android:name=".CommunityActivity"/>
         <activity
             android:name=".ItemActivity"
             android:exported="true">
